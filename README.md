@@ -1,3 +1,5 @@
-# sveltejs-kit-template-default-oynzjt
+# sveltejs-thingy
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/sveltejs-kit-template-default-oynzjt)
+ignore
+
+[stackblitz](https://stackblitz.com/edit/sveltejs-kit-template-default-oynzjt)
