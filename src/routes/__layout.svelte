@@ -6,4 +6,4 @@
 <slot />
 
 <hr />
-<Hlink text="go home" />
+<a href="/">go home</a>

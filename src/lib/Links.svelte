@@ -1,4 +1,5 @@
 <script>
+  // ignore the fact that this exists
   export let href="/"
   export let text="link"
 </script>

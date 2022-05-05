@@ -11,9 +11,9 @@
 </h2>
 
 <p>
-	<Hlink text="go to another page" href="coolpage" />
+	<a href="coolpage">go to counter</a>
 </p>
 
 <p>
-	<Hlink text="go to todo list" href="todo" />
+	<a href="todo">go to to-do list</a>
 </p>

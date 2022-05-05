@@ -1,9 +1,27 @@
 <script>
 	import Hlink from "$lib/Links.svelte"
+  var todos = [
+    "cool thing"
+  ];
+  var itext = "";
+  function addtodo() {
+    todos.unshift(itext);
+    todos = todos;
+    itext = "";
+  }
 </script>
 
 <h1 class="text-3xl font-bold">
-	theres going to be a todo list here
+	to do list
 </h1>
 
-<input type="text" placeholder="hi" />
+<input type=text bind:value={itext} />
+<button on:click={addtodo}>add item</button>
+
+<ul>
+
+{#each todos as todo}
+<li>{todo}</li>
+{/each}
+
+</ul>
