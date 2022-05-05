@@ -11,6 +11,8 @@
   }
 </script>
 
+<title>todo list</title>
+
 <h1 class="text-3xl font-bold">
 	to do list
 </h1>

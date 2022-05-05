@@ -2,6 +2,8 @@
 	import Hlink from "$lib/Links.svelte"
 </script>
 
+<title>cool page</title>
+
 <h1 class="text-3xl font-bold">
 	hello
 </h1>
