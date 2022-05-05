@@ -10,4 +10,10 @@
 	welcome to the website
 </h2>
 
-<Hlink text="go to another page" href="coolpage" />
+<p>
+	<Hlink text="go to another page" href="coolpage" />
+</p>
+
+<p>
+	<Hlink text="go to todo list" href="todo" />
+</p>
