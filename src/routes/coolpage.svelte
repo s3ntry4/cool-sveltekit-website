@@ -6,8 +6,13 @@
   function pressbutton() {
     pressed++;
   }
+
+  function unpressbuttion() {
+    pressed--;
+  }
 </script>
 
-<h1 class="text-2xl font-bold">cool page</h1>
-<button on:click={pressbutton} class="btn">cool button</button>
-<p>the button has been pressed {pressed} time(s)</p>
+<h1 class="text-2xl font-bold">counter</h1>
+<button on:click={pressbutton}>increase counter</button>
+<button on:click={unpressbuttion}>decrease counter</button>
+<p>counter: {pressed}</p>
