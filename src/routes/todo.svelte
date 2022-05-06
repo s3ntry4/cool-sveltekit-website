@@ -1,29 +1,47 @@
 <script>
 	import Hlink from "$lib/Links.svelte"
   var todos = [
-    "cool thing"
+    {text: "do stuff", complete: false}
   ];
   var itext = "";
   function addtodo() {
-    todos.unshift(itext);
+    if(itext != "") {
+      todos = [...todos, {text: itext, complete: false}]
+      itext = "";
+    }
+  }
+  function subtodo(i) {
+    todos.splice(i, 1)
     todos = todos;
-    itext = "";
+  }
+  function dotodo(i) {
+    todos[i].complete = !todos[i].complete
   }
 </script>
 
-<title>todo list</title>
+<title>to do list</title>
 
 <h1 class="text-3xl font-bold">
 	to do list
 </h1>
 
-<input type=text bind:value={itext} />
-<button on:click={addtodo}>add item</button>
+<form on:submit|preventDefault={addtodo}>
+<input type="text" bind:value={itext} />
+<input type="submit" class="btn cursor-pointer" value="add item" />
+</form>
 
-<ul>
+<ul class="margin">
 
-{#each todos as todo}
-<li>{todo}</li>
+{#each todos as todo, i}
+<li class="cursor-default">
+  <input type="checkbox" class="cursor-pointer" bind:checked={todo.complete} />
+  <span class:line-through={todo.complete} class:text-gray-500={todo.complete}>
+    {todo.text}
+  </span>
+  {#if todo.complete}
+    <button class="text-red-400" on:click={() => {subtodo(i)}}>X</button>
+  {/if}
+</li>
 {/each}
 
 </ul>

@@ -15,6 +15,6 @@
 <title>counter</title>
 
 <h1 class="text-2xl font-bold">counter</h1>
-<button on:click={pressbutton}>increase counter</button>
-<button on:click={unpressbuttion}>decrease counter</button>
+<button on:click={pressbutton} class="btn">increase counter</button>
+<button on:click={unpressbuttion} class="btn">decrease counter</button>
 <p>counter: {pressed}</p>

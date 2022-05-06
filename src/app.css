@@ -3,21 +3,29 @@
 @tailwind utilities;
 
 * {
+	margin: 0.5em 0;
+}
+
+.margin {
 	margin: 0.5em;
 }
 
-button {
+.btn {
 	@apply py-2 px-4 rounded bg-blue-500 text-white border shadow;
 	padding: 0.1em 0.3em;
 }
 
-button:hover {
+.btn-red {
+	@apply py-2 px-4 rounded bg-red-500 text-white border shadow;
+	padding: 0em 0.3em;
+}
+
+.btn:hover {
 	@apply bg-blue-600;
 }
 
 input[type='text'] {
 	@apply rounded border shadow;
-	margin: 0.5em 0;
 	padding: 0.1em 0.3em;
 }
 
@@ -26,5 +34,6 @@ a {
 }
 
 hr {
-	margin: 0.5em 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
